@@ -14,10 +14,10 @@ variables:
   buildConfiguration: 'Release'
   DOTNET_CLI_TELEMETRY_OPTOUT: '1'
 
+steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
